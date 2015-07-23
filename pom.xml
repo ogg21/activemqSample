@@ -1,0 +1,68 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.craig</groupId>
+  <artifactId>activemqSample</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>activemqSample</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+ 
+	 
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+
+	<dependency>
+		<groupId>fakepath</groupId>
+		<artifactId>geronimo-j2ee-management_spec</artifactId>
+		<version>1.0.1</version>
+	</dependency>
+
+
+    
+    <dependency>
+		<groupId>org.slf4j</groupId>
+		<artifactId>slf4j-api</artifactId>
+		<version>1.7.7</version>
+	</dependency>
+
+	<dependency>
+		<groupId>com.apache.activemq</groupId>
+		<artifactId>activemq-broker</artifactId>
+		<version>5.11.1</version>
+	</dependency>
+
+	<dependency>
+		<groupId>com.apache.activemq</groupId>
+		<artifactId>activemq-client</artifactId>
+		<version>5.11.1</version>
+	</dependency>
+
+
+	<dependency>
+		<groupId>com.javax</groupId>
+		<artifactId>geronimo-jms_spec.jar</artifactId>
+		<version>1.1.1</version>
+	</dependency>
+
+	<dependency>
+		<groupId>com.javax</groupId>
+		<artifactId>geronimo-jta_spec</artifactId>
+		<version>1.0.1</version>
+	</dependency>
+  </dependencies>
+  
+    
+	 
+</project>
