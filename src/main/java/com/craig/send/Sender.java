@@ -40,7 +40,7 @@ public class Sender {
 			destination = session.createQueue("FirstQueue");  
 			
 			messageProducer = session.createProducer(destination);
-			messageProducer.setDeliveryMode(DeliveryMode.NON_PERSISTENT);
+			messageProducer.setDeliveryMode(DeliveryMode.PERSISTENT);
 			
 			sendMessage(session,messageProducer);
 			session.commit();
@@ -69,7 +69,7 @@ public class Sender {
 	
 	public static void sendMessage(Session session, MessageProducer producer)  
             throws Exception {  
-        for (int i = 1; i <= 100000; i++) {  
+        for (int i = 1; i <= 10; i++) {  
             TextMessage message = session.createTextMessage("ActiveMq 发送的消息"  
                     + i);  
             // 发送消息到目的地方  
